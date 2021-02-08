@@ -240,11 +240,13 @@ export default {
       this.isSubmitted = !this.isSubmitted
     },
     firstFormHandler() {
-      this.firstForm = 'completed'
-      if (this.secondForm == 'inactive') {
-        this.secondForm = 'active'
-      } else {
-        this.thirdForm = 'active'
+      if (this.radio == 'first' || this.radio == 'second') {
+        this.firstForm = 'completed'
+        if (this.secondForm == 'inactive') {
+          this.secondForm = 'active'
+        } else {
+          this.thirdForm = 'active'
+        }
       }
     },
     firstFormChange() {
