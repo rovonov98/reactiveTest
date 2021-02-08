@@ -33,6 +33,9 @@ export default {
     justify-content: space-between;
     align-items: center;
     max-width: $whole-content-width;
+    @media(max-width: 576px) {
+        max-width: $whole-content-width-mobile;
+    }
     padding: .7rem 0 .7rem 0;
 }
 .header__logo {
@@ -45,6 +48,7 @@ export default {
 }
 .header__title {
     margin-left: 1.2rem;
+    font-weight: bold;
 }
 .header__interface {
     display: flex;

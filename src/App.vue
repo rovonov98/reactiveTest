@@ -2,6 +2,7 @@
   <div id="app">
     <Header />
     <Description />
+    <HorizontalLine />
     <Forms />
   </div>
 </template>
@@ -10,12 +11,14 @@
 import Header from './components/Header'
 import Description from './components/Description'
 import Forms from './components/Forms'
+import HorizontalLine from './components/HorizontalLine'
 
 export default {
   name: 'App',
   components: {
     Header,
     Description,
+    HorizontalLine,
     Forms
   }
 }
@@ -29,7 +32,8 @@ export default {
 }
 :root {
     @include responsive-font(18, 10);
-    font-family: sans-serif;
-    background: $light-grey;
+    font-family: 'GOST UI 2', sans-serif;
+    background: $lighter-grey;
+    color: $dark-grey;
 }
 </style>
